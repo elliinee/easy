@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Точка банк</title>
+  <!-- Styles -->
+  <link href="../css/style.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="icon" href="../img/favicon.webp">
+</head>
+<body>
+  
+  <a href="/feedback/" class="go-fix">Давайте обсудим ваш проект 👋</a>
+
+  <header id="header" class="header bgi" style="background-image: url(img/header/bg.jpg);">
+    <nav id="nav" class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <div class="nav__content__img">
+            <a href="/"><img src="img/header/logo.svg" alt=""></a>
+          </div>
+          <a href="/feedback" class="nav__content__menu__link black">
+            <div class="link">
+              <div data-hover="Написать нам">Написать нам</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container calc100vh">
+      <div class="header__content">
+        <div class="border-black">
+          <div class="border-black__text" style="float: right;">
+            
+
+            <div class="border-black__text__right black">Вёрстка</div>
+          </div>
+        </div>
+        <div class="header__content__case mt144">
+          <div class="header__content__case__title">точка банк</div>
+          <a href="https://tochka.com/" class="header__content__case__link black" target="_blank">
+            <img src="img/header/link.svg" alt="">
+            <div class="link">
+              <div data-hover="Смотреть сайт">Смотреть сайт</div>  
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header__bottom"> 
+        <div class="header__bottom__arrow black-arrow"> 
+          <img src="img/header/arrow.svg" alt=""> 
+        </div> 
+      </div> 
+    </div>
+  </header>
+  
+  <main id="main" class="main">
+    
+    <div class="block">
+      <div class="container">
+        <div class="border">
+          <div class="border__text">о проекте и задача</div>
+          <div class="border__arrow"></div>
+        </div>
+        <div class="block__content">
+          <div class="block__content__text mt48">
+            <p class="block__content__text__p w80">Верстка редизайна основного сайта</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block mt200">
+      <div class="container">
+        <div class="border">
+          <div class="border__text">технологии</div>
+          <div class="border__arrow"></div>
+        </div>
+        <div class="block__content">
+          <div class="block__content__text mt48">
+            <p class="block__content__text__p">Nuxt, Vue.js, SASS</p>
+          </div>
+          <div class="block__content__img mt144">
+            <img src="img/main/1.png" alt="">
+          </div>
+          <div class="block__content__img mt144 db">
+            <img src="img/main/2.jpg" alt="">
+            <img src="img/main/3.jpg" alt="" class="mt250 mt48-2">
+          </div>
+          <div class="block__content__img mt144">
+            <img src="img/main/4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="container">
+        <div class="contacts__content">
+          <div class="contacts__content__text mt200">
+            <a href="/osnova/" class="contacts__content__text__tel hover">
+              <div class="link">
+                <div data-hover="вернуться назад">вернуться назад</div>
+              </div>
+            </a>
+            <a href="/" class="contacts__content__text__tel hover">
+              <div class="link">
+                <div data-hover="на главную">на главную</div>
+              </div>
+            </a>
+            <a href="/osnova/" class="contacts__content__text__mail hover mob mt144">вернуться</a>
+            <a href="/" class="contacts__content__text__tel hover mob mt144">главная</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer mt200">
+    <div class="container">
+      <div class="footer__content">
+          <div class="footer__content__cr">ИЗИ®, 5 - 20©</div>
+          <div class="footer__content__tagline">Легко понять, невозможно игнорировать. ™</div>
+          <a href="/policy.pdf" class="footer__content__terms">
+            <div class="link">
+              <div data-hover="TERMS, PRIVACY POLICY">TERMS, PRIVACY POLICY</div>
+            </div>
+          </a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    let gofix = document.querySelector('.go-fix');
+    window.onscroll = function(){
+      if(window.pageYOffset > 2000 && gofix !== undefined){
+        gofix.style.opacity = '1';
+      }
+      else{
+        gofix.style.opacity = '0';
+      }
+    }
+  </script>
+
+</body>
+</html>
